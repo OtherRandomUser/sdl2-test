@@ -24,3 +24,12 @@ target_include_directories(random_points
 
 target_link_libraries(random_points ${SDL2_LIBRARIES})
 
+# lines
+add_executable(lines lines.cpp)
+
+target_include_directories(lines
+    PUBLIC
+        ${SDL2_INCLUDE_DIRS}
+)
+
+target_link_libraries(lines ${SDL2_LIBRARIES})
