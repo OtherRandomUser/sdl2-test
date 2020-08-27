@@ -33,3 +33,13 @@ target_include_directories(lines
 )
 
 target_link_libraries(lines ${SDL2_LIBRARIES})
+
+# circles
+add_executable(circles circles.cpp)
+
+target_include_directories(circles
+    PUBLIC
+        ${SDL2_INCLUDE_DIRS}
+)
+
+target_link_libraries(circles ${SDL2_LIBRARIES})
