@@ -43,3 +43,13 @@ target_include_directories(circles
 )
 
 target_link_libraries(circles ${SDL2_LIBRARIES})
+
+# bezier
+add_executable(bezier bezier.cpp)
+
+target_include_directories(bezier
+    PUBLIC
+        ${SDL2_INCLUDE_DIRS}
+)
+
+target_link_libraries(bezier ${SDL2_LIBRARIES})
